@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Type file</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<style>
+		input[type="file"] {
+			display: block;
+			margin:12px 0;
+			padding: 12px;
+		}
+	</style>
+</head>
+<body class="element">
+	<div class="layout">
+		<section class="content">
+			<a class="link-to-home" href="../index.html">Retour sur la page d'accueil</a>
+			<h1>Input Type file</h1>
+			<p>
+				L'élément HTML <code>&lt;input&gt;</code> est utilisé pour créer un contrôle interactif dans un formulaire web qui permet à l'utilisateur de saisir des données. L'élément HTML <code>&lt;input type="file"&gt;</code> permet d'ajouter du filee sur une seule ligne.
+			</p>
+			<section>
+				<h2>Exemple</h2>
+				<form action="myform.cgi">
+					<input type="file" name="fileupload" value="fileupload" id="fileupload">
+					<label for="fileupload"> Select a file to upload</label>
+					<input type="submit" value="submit">
+				</form>
+			</section>
+			<section>
+				<h2>Code derrière tout ça&nbsp;:</h2>
+					<pre>
+&lt;input type="file" placeholder="Tape ton filee ici" autofocus&gt;
+&lt;input type="file" placeholder="Je ne peux pas rester vide" required&gt;
+&lt;input type="file" placeholder="Je suis désactivé" disabled&gt;
+					</pre>
+				<h3>Quelques attributs&nbsp;:</h3>
+				<ul>
+					<li><code>placeholder</code> : Une indication, destinée à l'utilisateur, pour ce qui peut être saisi dans le champ.</li>
+					<li><code>required</code> : Cet attribut indique que la valeur doit être renseignée avant que l'utilisateur puisse envoyer le formulaire.</li>
+					<li><code>autofocus</code> : si un des champs a cet attribut, le curseur est placé dans ce champ quand on ouvre la page.</li>
+					<li><code>disabled</code> : le champ est désactivé et aucune interaction n'est possible.</li>
+				</ul>
+			</section>
+		<aside>
+			<h3>Plus d'info sur le sujet&nbsp;:</h3>
+			<ul>
+				<li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input" target="_blank">Input sur MDN</a></li>
+			</ul>
+		</aside>
+		</section>
+		<section class="list-of-links">
+			<h2>Liste des éléments&nbsp;:</h2>
+			<ul class="list-of-links__ul">
+				<li><a href="input-type-checkbox.html">input type checkbox</a></li>
+				<li><a href="input-type-email.html">input type file</a></li>
+				<li><strong>input type file</strong></li>
+				<li><a href="input-type-number.html">input type number</a></li>
+				<li><a href="input-type-radio.html">input type radio</a></li>
+				<li><a href="input-type-range.html">input type range</a></li>
+				<li><a href="input-type-reset.html">input type reset</a></li>
+				<li><a href="input-type-submit.html">input type submit</a></li>
+				<li><a href="input-type-text.html">input type text</a></li>
+				<li><a href="select.html">select</a></li>
+			</ul>
+		</section>
+	</div>
+</body>
+</html>
